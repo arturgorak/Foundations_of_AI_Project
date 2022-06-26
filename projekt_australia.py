@@ -366,7 +366,6 @@ kfold = StratifiedKFold(n_splits=10)
 
 pipe = Pipeline([
     ('preprocessing', preprocess_pipeline),
-    ('scaler',  StandardScaler()),
     ('classifier', DecisionTreeClassifier())
     ])
 
